@@ -1,5 +1,6 @@
 import React from "react";
 
+// One function set , section set are a component in React, and they are reuseable.
 const App = () => {
   return (
     <div>
