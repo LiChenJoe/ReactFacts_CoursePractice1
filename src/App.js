@@ -1,16 +1,18 @@
 import React from "react";
+import Friends from "./Friends";
 
 // One function set , section set are a component in React, and they are reuseable.
 const App = () => {
-  let friends = ["Adi", "Jessica", "Sama"];
+  let friends = [
+    { name: "Harry", age: 17, desc: "This is smart Harry." },
+    { name: "Ron", age: 17, desc: "I am silly Ron." },
+    { name: "Snap", age: 50, desc: "I am coming to get Harry!" },
+  ];
   return (
     <div>
-      <h1>My Profile</h1>
-      <p>My name is Joe.</p>
-      <p>I am 27 years old.</p>
-      <p>My frineds are: </p>
+      <h1>Profile</h1>
       {friends.map((friend) => (
-        <p>{friend}</p>
+        <Friends name={friend.name} age={friend.age} desc={friend.desc} />
       ))}
     </div>
   );
