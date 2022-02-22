@@ -1,14 +1,18 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./App";
-import Nav from "./Nav";
+import Header from "./Header";
+import Footer from "./Footer";
+import MainContent from "./MainContent";
 import "./styles/style.css";
 
-//In React.StrictMode, use self-closig tag to refer the app function.
-ReactDOM.render(
-  <React.StrictMode>
-    <Nav />
-    <App />
-  </React.StrictMode>,
-  document.querySelector("#root")
-);
+function Page() {
+  return (
+    <div>
+      <Header />
+      <MainContent />
+      <Footer />
+    </div>
+  );
+}
+
+ReactDOM.render(<Page />, document.getElementById("root"));
