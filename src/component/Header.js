@@ -5,15 +5,9 @@ export default function Header() {
   return (
     <header>
       <nav className="nav">
-        <div className="logo">
-          <img className="nav-logo" src={Logo} alt="react-logo" />
-          <h2>love React</h2>
-        </div>
-        <ul className="nav-items">
-          <li>Pricing</li>
-          <li>About</li>
-          <li>Contact</li>
-        </ul>
+        <img className="nav-logo" src={Logo} alt="react-logo" />
+        <h1>ReactFacts</h1>
+        <h4>React Course - Project 1</h4>
       </nav>
     </header>
   );

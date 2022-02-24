@@ -1,16 +1,17 @@
 import React from "react";
+import Background from "../react_background.png";
 
 export default function MainContent() {
   return (
     <div className="main">
-      <h1>Reasons I'm excited to learn React</h1>
-      <ol>
-        <li>
-          It's a popular library, so I'll be able to fit in with the cool kids!
-        </li>
-        <li>I'm more likely to get a job as a developer if I know React.</li>
-        <li>What's is your reasons?</li>
-      </ol>
+      <h1>Fun Facts about React</h1>
+      <ul>
+        <li>Was frist released in 2013</li>
+        <li>Was originally created by Jordan Walke</li>
+        <li>Is maintain by Facebook</li>
+        <li>Powers thousands of enterprise apps, includeing mobile apps</li>
+      </ul>
+      <img className="background" src={Background} alt="react-background" />
     </div>
   );
 }
