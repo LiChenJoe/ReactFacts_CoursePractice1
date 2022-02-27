@@ -1,5 +1,4 @@
 import React from "react";
-import Background from "../react_background.png";
 
 export default function MainContent() {
   return (
@@ -11,7 +10,6 @@ export default function MainContent() {
         <li>Is maintain by Facebook</li>
         <li>Powers thousands of enterprise apps, includeing mobile apps</li>
       </ul>
-      <img className="background" src={Background} alt="react-background" />
     </div>
   );
 }
